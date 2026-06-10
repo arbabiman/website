@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ایمان ارباب | رزومه شخصی</title>
-  <meta name="description" content="وبسایت شخصی ایمان ارباب - مدرس کامپیوتر و دانشجوی علوم کامپیوتر">
-  <link rel="stylesheet" href="style.css" />
+  <title>ایمان ارباب | پورتفولیو</title>
+  <meta name="description" content="پورتفولیوی شخصی ایمان ارباب - مدرس کامپیوتر و دانشجوی علوم کامپیوتر">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header" id="home">
@@ -20,28 +21,31 @@
         <li><a href="#experience">سوابق</a></li>
         <li><a href="#education">تحصیلات</a></li>
         <li><a href="#certificates">گواهی‌ها</a></li>
+        <li><a href="#languages">زبان‌ها</a></li>
         <li><a href="#contact">تماس</a></li>
       </ul>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="menu-btn" id="menuBtn"><i class='bx bx-menu'></i></button>
     </nav>
 
     <section class="hero container">
       <div class="hero-text">
         <h1>سلام، من <span>ایمان ارباب</span> هستم</h1>
-        <p>مدرس کامپیوتر در مدرسه علم سلیم و دانشجوی کارشناسی علوم کامپیوتر</p>
+        <p class="lead">
+          مدرس کامپیوتر در مدرسه علم سلیم و دانشجوی کارشناسی علوم کامپیوتر
+        </p>
         <div class="hero-actions">
           <a href="#contact" class="btn primary">تماس با من</a>
-          <a href="#skills" class="btn ghost">مهارت‌ها</a>
+          <a href="#certificates" class="btn ghost">مشاهده گواهی‌ها</a>
+        </div>
+
+        <div class="hero-mini">
+          <span><i class='bx bx-map'></i> تهران، سعادت‌آباد</span>
+          <span><i class='bx bx-phone'></i> ۰۹۹۴۲۹۴۰۰۹۴</span>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>اطلاعات سریع</h3>
-        <ul>
-          <li>📍 تهران، سعادت‌آباد</li>
-          <li>📞 ۰۹۹۴۲۹۴۰۰۹۴</li>
-          <li>🎓 دانشگاه خوارزمی</li>
-          <li>💼 مدرس کامپیوتر</li>
-        </ul>
+
+      <div class="hero-image-wrap">
+        <img src="profile.jpg" alt="عکس پروفایل ایمان ارباب" class="hero-image">
       </div>
     </section>
   </header>
@@ -50,107 +54,79 @@
     <section id="about" class="section container">
       <h2>درباره من</h2>
       <p>
-        من ایمان ارباب هستم؛ علاقه‌مند به آموزش، شبکه و امنیت، و در حال حاضر
-        هم‌زمان با تحصیل در رشته علوم کامپیوتر، به عنوان مدرس کامپیوتر فعالیت می‌کنم.
-        هدف من رشد مستمر در مسیر فنی و انتقال دانش به شکل کاربردی است.
+        علاقه‌مند به آموزش، شبکه و امنیت هستم و در مسیر رشد حرفه‌ای،
+        دانش دانشگاهی را با تجربه عملی تدریس ترکیب می‌کنم.
       </p>
     </section>
 
     <section id="skills" class="section container">
       <h2>مهارت‌ها</h2>
       <div class="chips">
-        <span>Java</span>
-        <span>Python</span>
-        <span>Network+</span>
-        <span>A+</span>
-        <span>Security+</span>
-        <span>Microsoft Excel</span>
-        <span>Microsoft PowerPoint</span>
+        <span class="chip dev"><i class='bx bxl-python'></i> Python</span>
+        <span class="chip dev"><i class='bx bxl-java'></i> Java</span>
+        <span class="chip net"><i class='bx bx-network-chart'></i> Network+</span>
+        <span class="chip net"><i class='bx bx-chip'></i> A+</span>
+        <span class="chip sec"><i class='bx bx-shield-quarter'></i> Security+</span>
+        <span class="chip office"><i class='bx bxs-spreadsheet'></i> Excel</span>
+        <span class="chip office"><i class='bx bxs-slideshow'></i> PowerPoint</span>
       </div>
     </section>
 
     <section id="experience" class="section container">
       <h2>سوابق شغلی</h2>
-      <div class="timeline">
-        <article class="card">
-          <h3>مدرس کامپیوتر</h3>
-          <p class="meta">مدرسه علم سلیم | مهر ۱۴۰۴ تا کنون</p>
-          <p>آموزش مباحث پایه و کاربردی کامپیوتر و انتقال مفاهیم به شکل ساده و قابل فهم.</p>
-        </article>
-      </div>
+      <article class="card hover-lift">
+        <h3><i class='bx bx-briefcase-alt-2'></i> مدرس کامپیوتر</h3>
+        <p class="meta">مدرسه علم سلیم | مهر ۱۴۰۴ تا کنون</p>
+        <p>آموزش مفاهیم پایه و کاربردی کامپیوتر با رویکرد ساده و قابل فهم.</p>
+      </article>
     </section>
 
     <section id="education" class="section container">
       <h2>تحصیلات</h2>
-      <article class="card">
-        <h3>کارشناسی علوم کامپیوتر</h3>
+      <article class="card hover-lift">
+        <h3><i class='bx bxs-graduation'></i> کارشناسی علوم کامپیوتر</h3>
         <p class="meta">دانشگاه خوارزمی | ۱۴۰۳ - در حال تحصیل</p>
       </article>
     </section>
 
     <section id="certificates" class="section container">
-      <h2>گواهی‌نامه‌ها و دوره‌ها</h2>
+      <h2>گواهی‌نامه‌ها</h2>
       <div class="grid">
-        <article class="card">
-          <h4>+A</h4>
-          <p>آموزشگاه مهندسی کندو - ۱۴۰۴</p>
-        </article>
-        <article class="card">
-          <h4>+Network</h4>
-          <p>آموزشگاه شبکه ایفل - ۱۴۰۴</p>
-        </article>
-        <article class="card">
-          <h4>+Security</h4>
-          <p>مجتمع فنی تهران - ۱۴۰۴</p>
-        </article>
-        <article class="card">
-          <h4>Java SE</h4>
-          <p>مجتمع فنی تهران - ۱۳۹۹</p>
-        </article>
+        <article class="card hover-lift"><h4><i class='bx bx-badge-check'></i> +A</h4><p>کندو - ۱۴۰۴</p></article>
+        <article class="card hover-lift"><h4><i class='bx bx-badge-check'></i> +Network</h4><p>ایفل - ۱۴۰۴</p></article>
+        <article class="card hover-lift"><h4><i class='bx bx-badge-check'></i> +Security</h4><p>مجتمع فنی تهران - ۱۴۰۴</p></article>
+        <article class="card hover-lift"><h4><i class='bx bx-badge-check'></i> Java SE</h4><p>مجتمع فنی تهران - ۱۳۹۹</p></article>
       </div>
     </section>
 
     <section id="languages" class="section container">
       <h2>زبان‌ها</h2>
-      <div class="grid">
-        <article class="card">
-          <h4>انگلیسی</h4>
-          <p>پیشرفته</p>
-        </article>
-        <article class="card">
-          <h4>فرانسه</h4>
-          <p>مقدماتی</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="activities" class="section container">
-      <h2>فعالیت‌های دانشگاهی</h2>
-      <div class="grid">
-        <article class="card">
-          <p>عضو کارگروه طرح و برنامه‌ریزی انجمن هوش مصنوعی دانشگاه خوارزمی (۱۴۰۳)</p>
-        </article>
-        <article class="card">
-          <p>عضو کارگروه جذب و سازماندهی انجمن هوش مصنوعی دانشگاه خوارزمی (۱۴۰۴)</p>
-        </article>
+      <div class="card">
+        <div class="lang-row">
+          <div class="lang-title">🇬🇧 انگلیسی <span>پیشرفته</span></div>
+          <div class="progress"><div style="width: 80%"></div></div>
+        </div>
+        <div class="lang-row">
+          <div class="lang-title">🇫🇷 فرانسه <span>مقدماتی</span></div>
+          <div class="progress"><div style="width: 18%"></div></div>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section container">
       <h2>تماس با من</h2>
-      <div class="contact-box">
-        <p>📞 موبایل: <a href="tel:09942940094">۰۹۹۴۲۹۴۰۰۹۴</a></p>
-        <p>📍 تهران، سعادت‌آباد</p>
-        <p>🔗 لینکدین: <a href="#" target="_blank">لینک پروفایل لینکدین</a></p>
+      <div class="card contact-card">
+        <p><i class='bx bx-phone'></i> <a href="tel:09942940094">۰۹۹۴۲۹۴۰۰۹۴</a></p>
+        <p><i class='bx bx-map'></i> تهران، سعادت‌آباد</p>
+        <p><i class='bx bxl-linkedin-square'></i> <a href="#">لینک پروفایل لینکدین</a></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© ۱۴۰۵ - طراحی شده برای ایمان ارباب</p>
+    <p>© ۱۴۰۵ | طراحی شده برای ایمان ارباب</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
