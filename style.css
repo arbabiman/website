@@ -305,7 +305,7 @@ h2{margin-bottom:30px;font-size:32px; font-weight: 800; background: linear-gradi
 
 /* ریسپانسیو اختصاصی موبایل */
 @media (max-width:850px){
-  .hero{grid-template-columns:1fr; text-align: center; gap: 35px; padding-top: 40px;}
+  .hero{grid-template-columns:1fr; text-align: center; gap: 35px; padding-top: 120px;}
   .identity-badge { align-items: center; }
   .badge-tag { align-self: center; }
   .hero-pillars { flex-direction: column; gap: 10px; }
