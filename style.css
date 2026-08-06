@@ -366,3 +366,62 @@ h2{margin-bottom:30px;font-size:32px; font-weight: 800; background: linear-gradi
 .contact-card a:hover {
   color: var(--primary);
 }
+/* =========================================
+   تغییرات مربوط به نسخه انگلیسی و دکمه زبان
+   ========================================= */
+
+/* استایل دکمه تغییر زبان */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+  transition: all 0.3s ease;
+  margin-right: 15px; /* فاصله از دکمه منو در موبایل */
+}
+
+.lang-switch:hover {
+  background: rgba(6, 182, 212, 0.1);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* فونت اختصاصی برای صفحه انگلیسی */
+[dir="ltr"] {
+  font-family: 'Inter', "Vazirmatn", sans-serif;
+}
+
+/* تنظیم جایگاه دکمه زبان در موبایل */
+@media (max-width: 850px) {
+  .nav-controls {
+    display: flex;
+    align-items: center;
+  }
+}
+/* استایل لوگوی تصویری در منو */
+.logo {
+  display: flex;
+  align-items: center;
+  /* حذف بک‌گراند گرادیانت قبلی که برای متن بود تا روی عکس تاثیر نگذارد */
+  background: none; 
+  -webkit-text-fill-color: initial;
+}
+
+.nav-logo-img {
+  height: 38px; /* ارتفاع دقیق و متناسب برای منوی کپسولی */
+  width: auto;
+  border-radius: 50%; /* برای اطمینان از گرد بودن کامل و تمیزی لبه‌ها */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-logo-img:hover {
+  transform: scale(1.08); /* افکت بزرگ‌نمایی ملایم هنگام هاور */
+  box-shadow: 0 0 15px rgba(0, 210, 170, 0.4); /* هاله نور سبز کله‌غازی ملایم */
+}
